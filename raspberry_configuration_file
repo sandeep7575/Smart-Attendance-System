@@ -1,0 +1,185 @@
+    # List of useful commands while configuring the Raspberry system.
+    1  sudo apt-get update
+    2  sudo apt-get dist-upgrade
+    3  $ sudo apt-get install build-essential tk-dev libncurses5-dev libncursesw5-dev libreadline6-dev libdb5.3-dev libgdbm-dev libsqlite3-dev libssl-dev libbz2-dev libexpat1-dev liblzma-dev zlib1g-dev
+    4  sudo apt-get install build-essential tk-dev libncurses5-dev libncursesw5-dev libreadline6-dev libdb5.3-dev libgdbm-dev libsqlite3-dev libssl-dev libbz2-dev libexpat1-dev liblzma-dev zlib1g-dev
+    5  wget https://www.python.org/ftp/python/3.7.1/Python-3.7.1.tar.xz $ tar xf Python-3.7.1.tar.xz
+    6  tar xf Python-3.7.1.tar.xz
+    7  cd Python-3.7.1
+    8  ./configure
+    9  make -j 4
+   10  sudo make altinstall
+   11  python 3.7
+   12  python3.7
+   13  sudo raspi-config
+   14  python --version
+   15  python3 --version
+   16  python3.7.1 --version
+   17  ls
+   18  python3 --version
+   19  python-3.7.1
+   20  python3.7
+   21  raspistill -o image.jpg
+   22  sudo apt-get install python3.7-pip
+   23  sudo apt-get install python3-pip
+   24  sudo apt-get install python3-picamera
+   25  python3.7
+   26  sudo python3.7
+   27  sudo apt-get install python3-picamera python-rpi .gpio
+   28  sudo apt-get install python3-picamera python-rpi.gpio
+   29  from picamera import PiCamera
+   30  python3.7
+   31  python
+   32  sudo apt-get install "picamera[array]"
+   33  pip3 install "picamera[array]"
+   34  python3.7
+   35  sudo apt-get install python-picamera python3-picamera python-rpi.gpio
+   36  ls
+   37  cd Python-3.7.1/
+   38  ls
+   39  cd ..
+   40  python3.7
+   41  python3.7 -m venv venv
+   42  sudo apt-get install python3-pip --upgrade
+   43  python3.7 -m venv venv
+   44  pip3 uninstall picamera
+   45  python3.5
+   46  pip3 install numpy
+   47  sudo apt-get install python3-numpy
+   48  pip3 uninstall numpy
+   49  sudo apt-get install python3-numpy
+   50  pip3 uninstall numpy
+   51  sudo apt-get uninstall python3-numpy
+   52  python3.5
+   53  sudo apt-get install python3-PIL
+   54  sudo apt-get install python3-Pillow
+   55  sudo apt-get install python3-os
+   56  pip3 install PIL
+   57  pip3 install Pillow
+   58  pip3.5 install Pillow
+   59  pip3 install Pillow
+   60  pip3 uninstall Pillow
+   61  sudo raspi-config
+   62  ls /etc
+   63  cd /etc
+   64  ls
+   65  sudo vi dphys-swapfile 
+   66  sudo vim dphys-swapfile 
+   67  sudo vi dphys-swapfile 
+   68  sudo setxkbmap -layout us
+   69  sudo vi dphys-swapfile 
+   70  df -h
+   71  sudo apt-get purge wolfram-engine
+   72  sudo apt-get purge libreoffice*
+   73  sudo apt-get clean
+   74  sudo apt-get autoremove
+   75  sudo service ssh start
+   76  ssh pi@127.0.0.1
+   77  sudo apt-get update && sudo apt-get upgrade
+   78  sudo apt-get install build-essential cmake pkg-config
+   79  sudo apt-get install libjpeg-dev libtiff5-dev libjasper-dev libpng12-dev
+   80  sudo apt-get install libavcodec-dev libavformat-dev libswscale-dev libv4l-dev
+   81  sudo apt-get install libxvidcore-dev libx264-dev
+   82  sudo apt-get install libgtk2.0-dev libgtk-3-dev
+   83  sudo apt-get install libatlas-base-dev gfortran
+   84  sudo apt-get install python2.7-dev python3-dev
+   85  cd ~
+   86  wget -O opencv.zip https://github.com/Itseez/opencv/archive/3.3.0.zip
+   87  unzip opencv.zip
+   88  wget -O opencv_contrib.zip https://github.com/Itseez/opencv_contrib/archive/3.3.0.zip
+   89  unzip opencv_contrib.zip
+   90  wget https://bootstrap.pypa.io/get-pip.py
+   91  sudo python get-pip.py
+   92  sudo python3 get-pip.py
+   93  sudo pip install virtualenv virtualenvwrapper
+   94  sudo rm -rf ~/.cache/pip
+   95  vi ~/ .profile
+   96  ls
+   97  cat profile
+   98  cat ~/ .profile
+   99  vi ~/ .profile
+  100  cat ~/ .profile
+  101  sudo vi ~/ .profile
+  102  sudo cat ~/ .profile
+  103  echo -e "\n# virtualenv and virtualenvwrapper" >> ~/.profile
+  104  sudo cat ~/ .profile
+  105  echo "export WORKON_HOME=$HOME/.virtualenvs" >> ~/.profile
+  106  echo "export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3" >> ~/.profile
+  107  echo "source /usr/local/bin/virtualenvwrapper.sh" >> ~/.profile
+  108  source ~/.profile
+  109  mkvirtualenv cv -p python3
+  110  sudo apt-get install python3-numpy
+  111  pip uninstall numpy
+  112  python3.5
+  113  pip3 install numpy
+  114  python3.5
+  115  cd ~/opencv-3.3.0/
+  116  mkdir build
+  117  cd build
+  118  cmake -D CMAKE_BUILD_TYPE=RELEASE     -D CMAKE_INSTALL_PREFIX=/usr/local     -D INSTALL_PYTHON_EXAMPLES=ON     -D OPENCV_EXTRA_MODULES_PATH=~/opencv_contrib-3.3.0/modules     -D BUILD_EXAMPLES=ON ..
+  119  sudo /etc/init.d/dphys-swapfile stop
+  120  sudo /etc/init.d/dphys-swapfile start
+  121  make -j4
+  122  sudo make install
+  123  sudo ldconfig
+  124  ls -l /usr/local/lib/python2.7/site-packages/
+  125  ls -l /usr/local/lib/python2.7/dist-packages/
+  126  cd ~/.virtualenvs/cv/lib/python2.7/dist-packages/
+  127  ls -l /usr/local/lib/python3.5/dist-packages/
+  128  ls -l /usr/local/lib/python3.5/site-packages/
+  129  cd /usr/local/lib/python3.5/site-packages/
+  130  sudo mv cv2.cpython-35m-arm-linux-gnueabihf.so cv2.so
+  131  cd ~/.virtualenvs/cv/lib/python3.5/site-packages/
+  132  ln -s /usr/local/lib/python3.5/site-packages/cv2.so cv2.so
+  133  cd ~/.virtualenvs/cv/lib/python2.7/site-packages/
+  134  source ~/.profile
+  135  workon cv
+  136  python3.5
+  137  sudo apt-get install python3-Pillow
+  138  pip3 install Pillow
+  139  python3.5
+  140  clear
+  141  python3.5
+  142  cd
+  143  sudo vi /etc/dphys-swapfile
+  144  sudo /etc/init.d/dphys-swapfile stop
+  145  sudo /etc/init.d/dphys-swapfile start
+  146  cd Downloads
+  147  ls
+  148  ls- l
+  149  ls -a
+  150  ls -h
+  151  raspstill
+  152  raspistill -o image.png
+  153  cd Downloads
+  154  ls -l
+  155  cd Door-unlock-through-face-recongition-master
+  156  ls -l
+  157  cd trainer
+  158  ls -l
+  159  chmod 777 trainer.yml 
+  160  ls -l
+  161  cd ..
+  162  sudo chmod 777 -R Door-unlock-through-face-recongition-master
+  163  cd Door-unlock-through-face-recongition-master/
+  164  ls -l
+  165  cd Door-unlock-through-face-recongition-master/
+  166  cd trainer/
+  167  ls
+  168  ls -l
+  169  raspistill -o img.png
+  170  source ~/.profile
+  171  cd Downloads/Door-unlock-through-face-recongition-master/
+  172  source ~/.profile
+  173  workon cv
+  174  python3.5 train.py
+  175  python3.5 capture.py 
+  176  python3.5 train.py
+  177  python3.5 capture.py 
+  178  python3.5 train.py
+  179  python3.5 predict.py 
+  180  python3.5 capture.py 
+  181  python3.5 train.py
+  182  python3.5 predict.py 
+  183  history
+  184  history > hist
